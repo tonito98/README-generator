@@ -1,5 +1,7 @@
 // TODO: Include packages needed for this application
+import inquirer from 'inquirer';
 
+console.log('Hello esse')
 // TODO: Create an array of questions for user input
 const questions = [];
 
