@@ -1,9 +1,55 @@
+// TODO: Create a function that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
+export function renderLicenseBadge(license) {
+  let licenseBadge = [];
+  if(license === 'Apache License 2.0') {
+    licenseBadge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0'
+  } else if (license === 'MIT') {
+    licenseBadge = '[![License: MIT](https://img.shields.io/badge/Licesnse-MIT-lellow.svg)](https://opensousource.org/licenses/MIT)'
+  } else if (license === 'GNU GPLv3'){
+    licenseBadge = '[![License: GNU GPLv3](https://img.shields.io/badge/License-GNU%20General%20Public%20License%20v3.0-pink)](https://opensource.org/licenses/GPL-3.0'
+  } else if (license ==='ISC') {
+    licenseBadge = '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)'
+  } else {
+    licenseBadge = []
+  } return licenseBadge;
+}
 
-  # yellow
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+export function renderLicenseLink(license) {
+  let licenseLink = [];
+  if(license === 'Apache License 2.0') {
+    licenseLink = ''
+  } else if (license === 'ISC') {
+    licenseLink = ''
+  } else if (license === 'MIT') {
+    licenseLink = ''
+  } else if (license === 'GNU GPLv3') {
+    licenseLink = ''
+  } return licenseLink;
+}
+
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
+export function renderLicenseSection(license) {
+  let licenseSection = [];
+  if(license === 'Unlicensed') {
+    licenseSection = []
+  } else {
+    licenseSection =
+    `License: ${license}`
+  } return licenseSection
+}
+
+// TODO: Create a function to generate markdown for README
+export function generateMarkdown(data) {
+  return `
+  # ${data.projectName}
 
 ## Description
 
-love
+${data.description}
 
 ## Table of Contents 
 
@@ -62,3 +108,7 @@ If you created an application or package and would like other developers to cont
 
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
+`;
+}
+
+// module.exports = generateMarkdown;
