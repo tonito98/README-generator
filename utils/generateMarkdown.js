@@ -15,7 +15,7 @@ export function renderLicenseBadge(license) {
   } return licenseBadge;
 }
 
-// TODO: Create a function that returns the license link
+// A function that returns the license link
 // If there is no license, return an empty string
 export function renderLicenseLink(license) {
   let licenseLink = [];
@@ -30,7 +30,7 @@ export function renderLicenseLink(license) {
   } return licenseLink;
 }
 
-// TODO: Create a function that returns the license section of README
+// A function that returns the license section of README
 // If there is no license, return an empty string
 export function renderLicenseSection(license) {
   let licenseSection = [];
@@ -42,7 +42,7 @@ export function renderLicenseSection(license) {
   } return licenseSection
 }
 
-// TODO: Create a function to generate markdown for README
+// A function to generate markdown for README
 export function generateMarkdown(data) {
   return `
   # ${data.projectName}
@@ -64,10 +64,12 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
+${data.installation}
 ## Usage
 
 Provide instructions and examples for use. Include screenshots as needed.
 
+${data.usage}
 To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
     
@@ -82,10 +84,14 @@ If you used any third-party assets that require attribution, list the creators w
 
 If you followed tutorials, include links to those here as well.
 
+${data.contributors}
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+ This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
 
+ ${renderLicenseSection(data.license)}
+ ${renderLicenseLink(data.license)}
+ ${renderLicenseBadge(data.license)}
 ---
 
 🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
@@ -111,4 +117,3 @@ Go the extra mile and write tests for your application. Then provide examples on
 `;
 }
 
-// module.exports = generateMarkdown;
