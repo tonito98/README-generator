@@ -1,3 +1,4 @@
+
 // Packages needed for this application
 import inquirer from 'inquirer';
 import fs from 'fs';
@@ -6,6 +7,7 @@ import {generateMarkdown} from './utils/generateMarkdown.js'
 
 // TODO: Create an array of questions for user input
 const questions = [
+
        {
             type: 'input',
             name: 'projectName',
@@ -23,6 +25,7 @@ const questions = [
        {
         type: 'input',
             name: 'description',
+
             message:`
             Provide a short description explaining the what, why, and how of your 
             project. Use the following questions as a guide:
@@ -32,6 +35,8 @@ const questions = [
             - What did you learn?
             
             `,
+
+
             validate: descriptionInput => {
                 if (descriptionInput) {
                     return true;
@@ -102,4 +107,5 @@ function init() {
 };
 
 // A function call to initialize app
+ 
 init();

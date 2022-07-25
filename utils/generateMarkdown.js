@@ -1,5 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+
 export function renderLicenseBadge(license) {
   let licenseBadge = [];
   if(license === 'Apache License 2.0') {
@@ -119,6 +120,8 @@ If you created an application or package and would like other developers to cont
 
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
+
 `;
 }
+
 
