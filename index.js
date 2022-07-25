@@ -67,6 +67,16 @@ const questions = [
               - npm packages use the MIT or ISC License.
               - OpenBSD prefers ISC license.`,
             choices: ["MIT","GNU GPLv3","ISC","Apache License 2.0"]
+       },
+       {
+        type:"input",
+        name: 'username',
+        message: 'What is your GitHub username? In case others have questions.',
+       },
+       {
+        type:"input",
+        name: 'email',
+        message: 'What is your email? In case others have questions.',
        }, 
 ];
     

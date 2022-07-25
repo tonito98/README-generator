@@ -1,9 +1,9 @@
 
-  # love io
+  # Read-Me Generator
 
 ## Description
 
-find love instantly
+In order to automate the process of creating a README file for every project that I create.
 
 ## Table of Contents 
 
@@ -13,17 +13,18 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Questions](#questions)
 
 ## Installation
 
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
-Make sure that you have node installed  in your computer. Then git clone the repository onto your computer.
+First make sure that you have node installed. Then make sure that  you  install  inquirer using  `npm install  --save inquirer` command on your terminal. Make sure that you git clone this repository.
 ## Usage
 
 Provide instructions and examples for use. Include screenshots as needed.
 
-type node index
+Open up a terminal and change directory to the one where the program is located. Once you are in the correct directory run the `node index` command and hit enter. You should then see a series of questions. The first asks about the name of your project. Answer all the questions. Then check in your directory for a README file that should have your answers populated into it.
 To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
     
@@ -38,12 +39,18 @@ If you used any third-party assets that require attribution, list the creators w
 
 If you followed tutorials, include links to those here as well.
 
-tonito98
+
 ## License
 
  This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
 
+ License: MIT
+ 
  [![License: MIT](https://img.shields.io/badge/Licesnse-MIT-lellow.svg)](https://opensousource.org/licenses/MIT)
+
+ ## Questions
+Username: tonito98
+Email Address: 
 ---
 
 🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.

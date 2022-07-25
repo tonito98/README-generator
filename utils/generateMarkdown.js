@@ -59,6 +59,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Questions](#questions)
 
 ## Installation
 
@@ -92,6 +93,10 @@ ${data.contributors}
  ${renderLicenseSection(data.license)}
  ${renderLicenseLink(data.license)}
  ${renderLicenseBadge(data.license)}
+
+ ## Questions
+Username: ${data.username}
+Email Address: ${data.email}
 ---
 
 🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
