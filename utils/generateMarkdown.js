@@ -6,7 +6,7 @@ export function renderLicenseBadge(license) {
   if(license === 'Apache License 2.0') {
     licenseBadge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0'
   } else if (license === 'MIT') {
-    licenseBadge = '[![License: MIT](https://img.shields.io/badge/Licesnse-MIT-lellow.svg)](https://opensousource.org/licenses/MIT)'
+    licenseBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensousource.org/licenses/MIT)'
   } else if (license === 'GNU GPLv3'){
     licenseBadge = '[![License: GNU GPLv3](https://img.shields.io/badge/License-GNU%20General%20Public%20License%20v3.0-pink)](https://opensource.org/licenses/GPL-3.0'
   } else if (license ==='ISC') {
